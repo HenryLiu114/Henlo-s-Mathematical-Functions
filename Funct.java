@@ -1,4 +1,6 @@
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -247,6 +249,22 @@ public class Funct {
         }
 
         return args;
+    }
+
+    /**
+     * Displays all variable rules in the function
+     */
+    public void displayVariableRules(){
+        if(!rules.isEmpty()){
+            Iterator<Character> iterator = rules.keySet().iterator();
+            while(iterator.hasNext()){
+                char c = iterator.next();
+                System.out.println(c + " = " + rules.get(c));
+            }
+        }
+        else{
+            System.out.println("No variable rules");
+        }
     }
 
     /**

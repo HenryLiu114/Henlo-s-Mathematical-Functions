@@ -193,7 +193,8 @@ public class PresetEquations {
      */
     public static Funct volumeSphere(){
         Funct volume = new Funct();
-        double num = 4/3*Math.PI;
+        double num = (4.0/3.0);
+        num = num * Math.PI;
         volume.addVarToFunct(num, 'r', 3);
         return volume;
     }

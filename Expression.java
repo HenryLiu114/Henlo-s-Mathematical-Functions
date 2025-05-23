@@ -1,13 +1,3 @@
-//
-// Name: Liu, Henry
-// Project: #2
-// Due: 10/21/2024
-// Course: cs-2400-01-f24
-//
-// Description:
-// Formats and Evaluates infix expressions into postfix expressions
-//
-
 import java.util.Arrays;
 import java.util.NoSuchElementException;
 import java.util.Stack;
